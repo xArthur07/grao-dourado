@@ -1,0 +1,75 @@
+h1 {
+    color:gold;
+    font-size: 6rem;
+    text-align: center;
+    align-content: center;
+    font-family: "Caveat";
+    }
+    h1 span {
+      color: brown;
+    }
+    body {
+      text-align: center;
+      align-content: center;
+    background-color: black;
+      font-family: "Oleo Script";
+    }
+    
+    p {
+      font-size: 3rem;
+    color: white;
+    
+    
+    }
+    a {
+      font-size: 3rem;
+    background-color: brown;
+    text-decoration: none;
+    color: gold;
+    padding: 1rem;
+    
+    border-radius: 1rem;
+    transition: background-color 300ms;
+    }
+    a:hover{
+      background-color: darkgoldenrod;
+      color: brown;
+    }
+    
+    @media (width < 40rem) {
+      html {
+        font-size: 70%;
+      }
+    }
+    #bg-image {
+    background-image: url("https://images.pexels.com/photos/25812095/pexels-photo-25812095/free-photo-of-alvorecer-amanhecer-aurora-cafeina.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      
+      background-position: center;
+      background-size: cover ;
+      background-repeat: no-repeat;
+     opacity:20% ;
+      position: absolute;
+      inset: 0;
+    z-index: -1;
+    }
+    
+    h1,p,a {
+      animation: appear 1s backwards;
+    }
+    h1 {
+      animation-delay: 0.2s ;
+    }
+    p {
+      animation-delay: 0.8s;
+    } 
+    
+    a{
+      animation-delay: 1.6s;
+    }
+    
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+    }
+    
